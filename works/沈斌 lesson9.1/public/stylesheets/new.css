@@ -1,0 +1,211 @@
+* {
+    font-family: microsoft yahei;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+header .logo {
+    min-width: 320px;
+    height: 45px;
+    text-align: center;
+    background: #3e98f0;
+    position: relative;
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+}
+
+header .logo .vip {
+    position: absolute;
+    height: 100%;
+}
+
+header .logo .vip .baidubtn {
+    float: left;
+    width: 34px;
+    height: 100%;
+    line-height: 45px;
+    font-size: 15px;
+    background: url(../images/icon.png) center 4px no-repeat;
+    background-size: 40px 500px;
+}
+
+header .logo .vip .baiduuser {
+    float: left;
+    width: 34px;
+    height: 100%;
+    line-height: 45px;
+    font-size: 15px;
+    background: url(../images/icon.png) center -463px no-repeat;
+    background-size: 40px 500px;
+}
+
+header .logo .more {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+header .logo .more .baidusearch {
+    float: left;
+    width: 34px;
+    height: 100%;
+    line-height: 45px;
+    font-size: 15px;
+    background: url(../images/icon.png) center -162px no-repeat;
+    background-size: 40px 500px;
+}
+
+header .logo .more .baiduadd {
+    float: left;
+    width: 34px;
+    height: 100%;
+    line-height: 45px;
+    font-size: 15px;
+    background: url(../images/icon.png) center -107px no-repeat;
+    background-size: 40px 500px;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    background: #3e98f0;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    width: 32%;
+    height: 45px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+article {
+    position: relative;
+    width: 100%;
+}
+
+.newsmain {
+    display: none;
+    position: relative;
+    width: 100%;
+    /*height: auto;*/
+}
+
+.newshow {
+    display: block;
+}
+
+.newsmain .newslist {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    height: auto;
+}
+
+.newsmain .newslist .newsbox {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 10px 0;
+    margin: 0 10px;
+    height: 70px;
+}
+
+.newsmain .newslist .newsbox .newsimg {
+    position: absolute;
+    left: 0;
+    width: 95px;
+    height: 70px;
+    border: 1px solid #e8e8e8;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.newsmain .newslist .newsbox .newsimg img{
+    width: 100%;
+    height: 100%;
+}
+.newsmain .newslist .newsbox .newstext {
+    min-width: 300px;
+    position: relative;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .newstitle {
+    position: relative;
+    margin-left: 100px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .newscontent {
+    position: relative;
+    margin-left: 100px;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .addtime {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    background: #3e98f0;
+    position: relative;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    float: left;
+    width: 32%;
+    height: 45px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 45px;
+}

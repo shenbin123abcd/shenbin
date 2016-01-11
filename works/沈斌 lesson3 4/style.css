@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
+.header{
+	background: orange;
+	height:150px;
+}
+.article{
+	background: blue;
+	height:300px;
+	padding-left:150px;
+	padding-right:100px;
+}
+.article .left{
+	background: yellow;
+	float:left;
+	width:150px;
+	height:16px;
+	margin-left:-20px;
+	margin-left:-100%;
+	position:relative;
+	left:-150px;
+}
+.article .right{
+	background: pink;
+	width:100px;
+	height:16px;
+	float:left;
+	margin-left:-100px;
+	position:relative;
+	left:100px;
+}
+.article .middle{
+	background: black;
+	color:white;
+	float:left;
+	width:100%;
+}
+
+
+/*双飞翼布局*/
+.footer{
+	background: green;
+	overflow:hidden;
+	height:300px;
+}
+.footer .middle2{
+	float:left;
+	width:100%;
+	background: grey;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+}
+.footer .left2{
+	float:left;
+	width:100px;
+	height:16px;
+	background: rgb(163, 80, 94);
+	margin-left:-100%;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+}
+.footer .right2{
+	float:left;
+	width:200px;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+	background: rgb(57, 187, 118);
+	margin-left:-200px;
+}
+.inner{
+	margin-left:100px;
+	margin-right:200px
+}

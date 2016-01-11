@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div id="screen">0</div>
+		<div class='btn-group'>
+			<div class='group-item'>
+				<a><button type="button" id="pointer" onclick=PressDown(this.id)>.</button></a>
+				<a><button type="button" id="delete" onclick=PressDown(this.id)>退格</button></a>
+				<a><button type="button" id="clear"  onclick=PressDown(this.id)>清屏</button></a>
+				<a class="banner">极客学院</a>
+			</div>
+			<div class='group-item'>
+				<a><button type="button" id="sin" onclick=PressDown(this.id)>sin</button></a>
+				<a><button type="button" id="cos" onclick=PressDown(this.id)>cos</button></a>
+				<a><button type="button" id="tan" onclick=PressDown(this.id)>tan</button></a>
+				<a><button type="button" id="cot" onclick=PressDown(this.id)>cot</button></a>
+			</div>
+			<div class='group-item'>
+				<a><button type="button" id="9" onclick=PressDown(this.id)>9</button></a>
+				<a><button type="button" id="8" onclick=PressDown(this.id)>8</button></a>
+				<a><button type="button" id="7" onclick=PressDown(this.id)>7</button></a>
+				<a><button type="button" id="6" onclick=PressDown(this.id)>6</button></a>
+			</div>
+			<div class='group-item'>
+				<a><button type="button" id="5" class="number" value="5" onclick=PressDown(this.id)>5</button></a>
+				<a><button type="button" id="4" class="number" value="4" onclick=PressDown(this.id)>4</button></a>
+				<a><button type="button" id="3" class="number" value="3" onclick=PressDown(this.id)>3</button></a>
+				<a><button type="button" id="2" class="number" value="2" onclick=PressDown(this.id)>2</button></a>
+			</div>
+			<div class='group-item'>
+				<a><button type="button" id="1" class="number" value="1" onclick=PressDown(this.id)>1</button></a>
+				<a><button type="button" id="0" class="number" value="0" onclick=PressDown(this.id)>0</button></a>
+				<a><button type="button" id="negative" onclick=PressDown(this.id)>+/-</button></a>
+				<a><button type="button" id="add" onclick=PressDown(this.id)>+</button></a>
+			</div>
+			<div class='group-item'>
+				<a><button type="button" id="minus" onclick=PressDown(this.id)>-</button></a>
+				<a><button type="button" id="avail" onclick=PressDown(this.id)>*</button></a>
+				<a><button type="button" id="divide" onclick=PressDown(this.id)>/</button></a>
+				<a><button type="button" id="equal" onclick=PressDown(this.id)>=</button></a>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+	<script src="js2.js"></script>
+</body>
+</html>

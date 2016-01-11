@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:314px;
+	margin:0 auto;
+	padding:100px 20px;
+	text-align: right;
+	position:relative;
+}
+.result{
+	position:absolute;
+	right:12px;
+}
+h1{
+	padding-bottom:30px;
+	text-align: center;
+	position:relative;
+	left:30px;
+}
+.button{
+	position:relative;
+	right:22px;
+}
+button{
+	padding:5px 20px;
+}
+#clear{
+	text-align: center;
+	width:70px;
+	margin:auto;
+	display:block;
+	position:relative;
+	left:14px;
+}
+input[type="text"]{
+	background: #423a34;
+	border: 1px solid #555555;
+	line-height: 20px;
+	padding: 7px 30px 7px 10px;
+	color: #ffffff;
+	font-size: 13px;
+	height: 36px;
+	width:200px;
+}

@@ -1,0 +1,474 @@
+*{
+	padding:0;
+	margin:0;
+}
+input:focus{
+	outline:none;
+}
+body{
+	font: 14px/100% arial,"Hiragino Sans GB","Hiragino Sans GB W3",\5b8b\4f53;
+	background: url("../img/img4.png") repeat-x left top;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+.container{
+	width:90%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*nav导航*/
+.header-nav{
+	overflow:hidden;
+	display:block;
+	position:relative;
+}
+.header-nav .nav-img{
+	overflow:hidden;
+	display:inline-block;
+	float:left;
+}
+	.header-nav .nav-img img{
+		display:block;
+		float:left;
+	}
+	.nav-img a.sethome{
+		width: 60px;
+		height: 25px;
+		line-height: 1.7;
+		margin-top: 20px;
+		margin-right: 8px;
+		display: block;
+		float: left;
+		color: #fff;
+		text-align: center;
+		background:url("../img/img2.png") -20px -172px no-repeat;
+		position:relative;
+	}
+	.nav-img a.sethome span{
+		color:#fff;
+		font-size:12px;
+		display:block;
+		position:absolute;
+		left:6px;
+	}
+.header-nav .nav-list{
+	float:left;
+	height: 60px;
+	vertical-align: top;
+}
+	.header-nav .nav-list.right-style{
+		position:absolute;
+		right:245px;
+	}
+	.nav-list a.list-style{
+		padding-left: 9px;
+		line-height: 60px;
+		padding-right: 10px;
+		color: #999;
+		font-size:12px;
+		display:inline-block;
+	}
+	.nav-list span.bk-img{
+		width: 9px;
+		height: 6px;
+		background: url("../img/img2.png") no-repeat;
+		display:inline-block;
+	}
+	.nav-list .weahter-city span:last-child{
+		background-position: -52px -97px;
+	}
+	.nav-list a.Login{
+		margin-left:20px;
+	}
+	.nav-list .Login span:nth-child(2){
+		background-repeat: no-repeat;
+		background-position: -96px -125px;
+		width: 28px;
+		height: 25px;
+		position:relative;
+		top:7px;
+	}
+	.nav-list .Login span:nth-child(4){
+		background-repeat: no-repeat;
+		background-position: -244px -125px;
+		width: 28px;
+		height: 25px;
+		position:relative;
+		top:7px;
+	}
+	.header-nav .advert{
+		position:absolute;
+		overflow:hidden;
+		display:block;
+		right:0;
+		border-left: 1px solid #d9d9d9;
+		border-right: 1px solid #d9d9d9;
+	}
+	.header-bottom{
+		width: 100%;
+		height: 60px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-bottom: 1px solid #ccc;
+		opacity: .2;
+	}
+
+/*搜索框*/
+.search-box{
+	height:60px;
+	width:100%;
+	padding:42px 0 0 166px;
+}
+	.search{
+		width:70%;
+		position:relative;
+	}
+	.search .baidu-logo{
+		display:inline-block;
+	}
+	.form-box{
+	margin: 0 10px;
+	border: 1px solid #8d9394;
+	border-radius: 1px;
+	height: 42px;
+	box-shadow: 0 1px 1px 0 #dfdfdf;
+	background: #fff;
+	position: relative;
+	width:60%;
+	display:inline-block;
+}
+.form-box textarea{
+	border-radius: 0;
+	margin: 0;
+	padding: 7px 77px 7px 6px;
+	height: 42px;
+	line-height: 28px;
+	resize: none;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-size: 18px;
+	border: 0;
+	float:left;
+	width:100%;
+}
+.form-box .submit-inner{
+	width: 79px;
+	position:absolute;
+	top:0;
+	right:0;
+	float:left;
+}
+.baidi-btn{
+	width: 79px;
+	height: 42px;
+	background: -webkit-linear-gradient(top,#f9f9f9,#e7e9eb);
+	box-shadow: 0 0 0 1px #fff inset;
+	line-height: 42px;
+	color: #46484b;
+	font-weight: 700;
+	font-size: 16px;
+	box-sizing: border-box;
+	border:0;
+	border-left: 1px solid #8d9394;
+}
+.search-hot-box{
+	width: 100%;
+	padding: 0 0 0 282px;
+}
+	.search-hot-box .hotsearch-box{
+		position: relative;
+		height: 20px;
+		z-index: 103;
+	}
+	.hotsearch-box .hotsearchtop{
+		position: relative;
+		height:20px;
+	}
+	.hotsearch-box ul li{
+		display:inline-block;
+	}
+	.hotsearch-box ul.boxhot{
+		height: 20px;
+		overflow: hidden;
+	}
+	.hotsearch-box ul.boxhot .title{
+		margin-right: 6px;
+		font-size: 12px;
+		line-height: 20px;
+		color: #999;
+	}
+	.hotsearch-box ul.boxhot .title a{
+		color:#0aa770;
+	}
+	.hotsearch-box ul.boxhot .text{
+		margin-right: 20px;
+	}
+	.hotsearch-box ul.boxhot .text a:hover{
+		text-decoration: underline;
+		color:red;
+	}
+
+.hao123-content{
+	position: relative;
+	margin-top:50px;
+}
+	.hao123-content .hao123-menus{
+		border: 0px;
+		margin-bottom: 10px;
+		width:1181px;
+		height: 38px;
+		border-top: 2px solid #099e6a;
+		border-bottom: 1px solid #eaeaea;
+		background-color: #fcfcfc;
+		margin: 0 auto;
+		height: 45px;
+		font-size: 14px;
+		position: relative;
+	}
+	.hao123-menus .menus{
+		margin: 0 auto;
+		margin-bottom: 0;
+		height: 45px;
+		font-size: 14px;
+		position: relative;
+	}
+	.hao123-menus .menus .menu.first{
+		width:81px;
+	}
+	.hao123-menus .menus .menu{
+		height: 38px;
+		line-height: 38px;
+		width: 110px;
+		float: left;
+		text-align: center;
+		cursor: pointer;
+		overflow: hidden;
+		position:relative;
+	}
+	.menus .link.active{
+		background-color: #0aa770;
+		cursor: pointer;
+		color: #fff;
+		border-left: 0;
+		border-right: 0;
+		text-align: center;
+		position: relative;
+		font-family: Microsoft Yahei;
+		font-size: 16px;
+		display: block;
+		height: 100%;
+	}
+	.title{
+		color:#333;
+	}
+	.menus .active .title{
+		border-width: 2px 0 0 0;
+		color:#fff;
+	}
+	.menu-split{
+		display: block;
+		width: 1px;
+		height: 40px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url(http://s1.hao123img.com/v5/dU/1s/Aa/af/gO/3/menus_split.png) center left no-repeat;
+	}
+.layout-content{
+	width: 1190px;
+	margin:auto;
+}
+	.layout-content .content-right{
+		width:900px;
+		float:right;
+	}
+	.hao123-famoussite{
+		width: 898px;
+		border-width: 1px;
+		position: relative;
+		z-index:100;
+		border: 1px solid #adb;
+	}
+	.site-bd{
+		width: 878px;
+		padding-left: 23px;
+		padding-top: 11px;
+		padding-bottom: 5px;
+		position:relative;
+	}
+	.site-item{
+		width: 130px;
+		padding-top: 6px;
+		padding-bottom: 4px;
+		margin-right: 4px;
+		padding-left: 9px;
+		position: relative;
+		color: #000;
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		vertical-align: middle;
+		display:inline-block;
+	}
+	.sitemainlink{
+		background:url("../img/img7.png") no-repeat 2px -198px;
+		padding-left: 25px;
+		display: inline-block;
+	}
+	.site-item-normal{
+		width: 130px;
+		padding-top: 6px;
+		padding-bottom: 4px;
+		margin-right: 4px;
+		padding-left: 9px;
+		position: relative;
+		color: #000;
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		vertical-align: middle;
+	}
+	.site-item-normal:not(:nth-last-of-type(2)) a:last-child{
+		width: auto;
+	}
+	.site-item-normal .sitesublink{
+		background: 0;
+		padding-left: 0;
+		padding-right: 5px;
+		_padding-right: 0;
+		position: relative;
+		z-index: 999;
+		display: inline-block;
+	}
+	.sitemainlink.sina{
+		background-position: 2px -278px;
+	}
+	.sitemainlink.souhu{
+		background-position: 2px -318px;
+	}
+	.sitemainlink.QQ{
+		background-position: 2px -38px;
+	}
+	.sitemainlink.wangyi{
+		background-position: 2px -157px;
+	}
+	.sitemainlink.aiqiyi{
+		background:url(http://sc2.hao123img.com/urlicon/1821.png) no-repeat;
+	}
+	.sitemainlink.tianmao{
+		background:url(http://sc1.hao123img.com/urlicon/10138.2.png) no-repeat;
+	}
+	.sitemainlink.fhuang{
+		background-position:2px -238px;
+	}
+	.sitemainlink.taobao{
+		background-position:2px -358px;
+	}
+	.sitemainlink.game{
+		background:url(http://sc1.hao123img.com/urlicon/game0331.png) no-repeat;
+	}
+	.sitemainlink.4399game{
+		background-position: 2px 2px;
+	}
+	.sitemainlink.xhpeople{
+		background: url("http://sc2.hao123img.com/urlicon/10435.png") no-repeat;
+	}
+	.sitemainlink.JD{
+		background: url("http://sc2.hao123img.com/urlicon/21.1.png") no-repeat;
+	}
+	.sitemainlink.juhuasuan{
+		background: url("http://sc1.hao123img.com/urlicon/8.411.png") no-repeat;
+	}
+	.sitemainlink.tejia{
+		background: url("http://sc1.hao123img.com/urlicon/6282.png") no-repeat;
+	}
+	.sitemainlink.father{
+		background: url("http://sc2.hao123img.com/urlicon/1419388771.png") no-repeat;
+	}
+	.sitemainlink.car{
+		background-position: 2px -518px;
+	}
+	.sitemainlink.gowhere{
+		background:url("http://sc1.hao123img.com/urlicon/2554.png") no-repeat;
+	}
+	.box-famoussite{
+		padding-top: 5px;
+		clear: both;
+	}
+	.wf-inner{
+		margin-left: 30px;
+		padding-top: 4px;
+	}
+	.wf-inner span{
+		width: 141px;
+		position: relative;
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+	}
+	a.famoussite-mainlink{
+		padding: 1px 4px;
+		zoom: 1;
+	}
+	a.widget-links-r{
+		padding: 1px 4px;
+		zoom: 1;
+	}
+	.green-color{
+		color:#118850;
+	}
+	.layout-content-slider{
+		width: 280px;
+		float:left;
+		position: relative;
+	}
+	.wslider{
+		width: 278px;
+		background-color: #fcfcfc;
+		position: relative;
+		overflow: hidden;
+		zoom: 1;
+		margin-bottom: 10px;
+		border: 1px solid #cecece;
+	}
+	.item-pic{
+		width: 278px;
+	}
+	.item-pic img{
+		width: 278px;
+		height:70px;
+	}
+	.item-text{
+		padding: 7px 10px;
+		margin-right: -10px;
+	}
+	.item-text .txt{
+		display: inline-block;
+		margin-right: 10px;
+		height: 28px;
+		line-height: 28px;
+		vertical-align: top;
+	}
+	.txt .link{
+		display: inline-block;
+		font-size: 14px;
+	}
+	.txt .link:hover{
+		text-decoration: underline;
+		color:red;
+	}
+	div.button-group{
+		display:inline-block;
+		padding-top:5px;
+	}

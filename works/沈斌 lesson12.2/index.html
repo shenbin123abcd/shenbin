@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前端高级面试题</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<h1>前端高级面试题</h1>
+		<h2>1.JavaScript原型，原型链 ? 有什么特点？</h2>
+		<p>原型对象也是普通的对象，是对象一个自带隐式的 __proto__ 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为null的话，我们就称之为原型链。
+		*  原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。</p>
+
+		<h2>2.谈谈This对象的理解</h2>
+		<p>this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。
+		但是总有一个原则，那就是this指的是调用函数的那个对象。this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象</p>
+
+		<h2>3.什么是闭包（closure），为什么要用？</h2>
+		<p>执行say667()后,say667()闭包内部变量会存在,而闭包内部函数的内部变量不会存在.使得Javascript的垃圾回收机制GC不会收回say667()所占用的资源，因为say667()的内部函数的执行需要依赖say667()中的变量。这是对闭包作用的非常直白的描述.
+		function say667() {</br>
+		&nbsp;    var num = 666;</br>
+		&nbsp;   var sayAlert = function() { alert(num); }</br>
+		&nbsp;    num++;</br>
+		&nbsp;    return sayAlert;</br>
+		}</br>
+
+		 var sayAlert = say667();</br>
+		 sayAlert()//执行结果应该弹出的667</p>
+
+		<h2>4.如何判断一个对象是否属于某个类？</h2>
+		<p>使用instanceof
+	       if(a instanceof Person){</br>
+	        &nbsp;   alert('yes');</br>
+	       }</br>
+	   	</p>
+		
+		<h2>5.模块化怎么做？</h2>
+		<p>
+			立即执行函数,不暴露私有成员</br>
+
+			var module1 = (function(){</br>
+			　　　　&nbsp;var _count = 0;</br>
+			　　　　&nbsp;var m1 = function(){</br>
+			　　　　　　&nbsp;//...</br>
+			　　　　&nbsp;};</br>
+			　　　　&nbsp;var m2 = function(){</br>
+			　　　　　　&nbsp;//...</br>
+			　　　　&nbsp;};</br>
+			　　　　&nbsp;return {</br>
+			　　　　　　&nbsp;m1 : m1,</br>
+			　　　　　　&nbsp;m2 : m2</br>
+			　　　　&nbsp;};</br>
+			　　&nbsp;})(); </br>
+		</p>
+
+		<h2>6.作用域考虑如下代码：</br>
+			(function() {</br>
+				&nbsp;var a = b = 5;</br>
+			})();</br>
+			console.log(b);</br>
+			请问控制台上会输出什么？</h2>
+		<p>答案是5.在函数表达式中有两个赋值，但a是用关键字var 来声明的，这意味着a是局部变量，而b则被赋予为全局变量。另一个陷阱是，它并没有使用严格模式（use strict）。在函数里面，如果启用了严格模式，代码就会报错：“Uncaught ReferenceError: b is not defined”。请记住，严格模式需要你显式地引用全局作用域</p>
+
+		<h2>7.创建“内置”方法给String对象定义一个repeatify方法。该方法接收一个整数参数，作为字符串重复的次数，最后返回重复指定次数的字符串。例如：
+		</br>console.log('hello'.repeatify(3));输出应该是:</br>hellohellohello.</h2>
+		<p>String.prototype.repeatify = String.prototype.repeatify || function(times){</br>
+			&nbsp;var str = '';</br>
+			&nbsp;for (var i = 0; i < times; i++) {</br>
+			&nbsp;str += this;</br>
+		}</br>
+			&nbsp;return str;</br>
+		};</br>
+		这题测试开发者对Javascript的继承及原型属性的知识，它同时也检验了开发者是否能扩展内置数据类型的方法。
+		这里的另一个关键点是，看你怎样避免重写可能已经定义了的方法。这可以通过在定义自己的方法之前，检测方法是否已经存在。</p>
+
+		<h2>8.声明提前</br>
+		下面这段代码的结果是什么？为什么？</br>
+			function test(){</br>
+				&nbsp;console.log(a);</br>
+				&nbsp;console.log(foo());</br>
+
+				&nbsp;var a = 1;</br>
+				&nbsp;function foo() {</br>
+					&nbsp;&nbsp;return 2;</br>
+				&nbsp;}</br>
+			}</br>
+		test();</h2>
+		<p>代码的运行结果：undefined和 2。</br>
+		理由是，变量和函数的声明都被提前至函数体的顶部，而同时变量并没有被赋值。因此，当打印变量a时，它虽存在于函数体（因为a已经被声明），但仍然是undefined。换句话说，上面的代码等同于下面的代码：</br>
+			function test() {</br>
+				&nbsp;var a;</br>
+				&nbsp;function foo() {</br>
+					&nbsp;&nbsp;return 2;</br>
+				&nbsp;}</br>
+				&nbsp;console.log(a);</br>
+				&nbsp;console.log(foo());</br>
+				&nbsp;a = 1;</br>
+			}</br>
+			test();</br>
+		</p>
+
+		<h2>9.JavaScript中的this下面代码的运行结果是什么并做解释。</br>
+			var fullname = 'John Doe';</br>
+			var obj = {</br>
+				&nbsp;fullname: 'Colin Ihrig',</br>
+				&nbsp;prop: {</br>
+					&nbsp;&nbsp;fullname: 'Aurelio De Rosa',</br>
+					&nbsp;&nbsp;getFullname: function() {</br>
+						&nbsp;&nbsp;&nbsp;return this.fullname;</br>
+					&nbsp;&nbsp;}</br>
+				&nbsp;}</br>
+			};</br>
+			console.log(obj.prop.getFullname());</br>
+			var test = obj.prop.getFullname;</br>
+			console.log(test());</br>
+		</h2>
+		<p>答案:</br>
+		代码输出：Aurelio De Rosa 和 John Doe</br>
+
+		理由是，Javascript中关键字this所指代的函数上下文，取决于函数是怎样被调用的，而不是怎样被定义的。</br>
+
+		在第一个console.log()，getFullname()被作为obj.prop对象被调用。因此，当前的上下文指代后者，函数返回这个对象的fullname属性。相反，当getFullname()被赋予test变量，当前的上下文指代全局对象window，这是因为test被隐式地作为全局对象的属性。基于这一点，函数返回window的fullname，在本例中即为代码的第一行。</p>
+
+		<h2>10.闭包,请问下面的this和aa的输出值是？</br>
+			var a = 20;</br>
+			function test(){</br>
+				&nbsp;var a = 1;</br>
+				&nbsp;var foo = function() {</br>
+			      	&nbsp;&nbsp;console.log("this",this);</br>
+			        &nbsp;&nbsp;return a;</br>
+				&nbsp;}</br>
+			    &nbsp;return foo;</br>
+			}</br>
+			var aa = test();</br>
+			console.log("aa:",aa());</br>
+		</h2>
+		<p>this:window和aa:1,aa的结果是1的原因是函数调用时的作用域环境是声明时的环境，而this则是指向调用者，这里没有明确指明调用者，则是window。</p>
+
+		<h2>11.居中一个浮动元素</h2>
+		<p>
+			确定容器的宽高 宽500 高 300 的层,设置层的外边距</br>
+		    .div {</br>
+		      &nbsp;width:500px ; height:300px;//高度可以不设</br>
+		      &nbsp;margin: -150px 0 0 -250px;</br>
+		      &nbsp;position:relative;相对定位</br>
+		      &nbsp;background-color:pink;//方便看效果</br>
+		      &nbsp;left:50%;</br>
+		      &nbsp;top:50%;</br>
+		    }</br>
+		</p>
+
+		<h2>12.一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</h2>
+		<p>
+			查找浏览器缓存</br>
+	        DNS解析、查找该域名对应的IP地址、重定向（301）、发出第二个GET请求
+	        进行HTTP协议会话</br>
+	        客户端发送报头(请求报头)</br>
+	        服务器回馈报头(响应报头)</br>
+	        html文档开始下载</br>
+	        文档树建立，根据标记请求所需指定MIME类型的文件</br>
+	        文件显示</br>
+	        [</br>
+	        浏览器这边做的工作大致分为以下几步：</br>
+	        加载：根据请求的URL进行域名解析，向服务器发起请求，接收文件（HTML、JS、CSS、图象等）。</br>
+	        解析：对加载到的资源（HTML、JS、CSS等）进行语法解析，建议相应的内部数据结构（比如HTML的DOM树，JS的（对象）属性表，CSS的样式规则等等）</br>
+	        }</br>
+		</p>
+	</div>
+</body>
+</html>

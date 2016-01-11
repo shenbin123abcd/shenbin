@@ -1,0 +1,103 @@
+*{
+	font-family:microsoft yahei;
+
+}
+.navbar{
+	position: relative;
+}
+.navbar-logo {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+    background: url(../images/icon.png) center -10px no-repeat;
+}
+.container-fluid{
+	position: relative;
+}
+.newsmain .newslist {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    height: auto;
+}
+
+.newsmain .newslist .newsbox {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 10px 0;
+    margin: 0 10px;
+    height: 150px;
+}
+
+.newsmain .newslist .newsbox .newsimg {
+    position: absolute;
+    left: 0;
+    width: 140px;
+    height: 120px;
+    border: 1px solid #e8e8e8;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.newsmain .newslist .newsbox .newsimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsmain .newslist .newsbox .newstext {
+    position: relative;
+    float: left;
+    height: 130px;
+    overflow: hidden;
+    margin-left: 150px;
+}
+
+.newsmain .newslist .newsbox .newsid {
+    position: relative;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #262b31;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .newstitle {
+    position: relative;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #262b31;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .newscontent {
+    position: relative;
+    height: 60px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    overflow: hidden;
+}
+
+.newsmain .newslist .newsbox .addtime {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    line-height: 20px;
+    text-align: right;
+}
+.navmenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 60px;
+}
+#nav-black>li>a{
+	background: #333;
+	color: white;
+}
+#systemSetting>li>a{
+	color: #333
+}

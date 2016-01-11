@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度首页</title>
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="">
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<!--头部-->
+		<div class="header">
+			<ul class="navbar">
+				<li><a href="">新闻</a></li>
+				<li><a href="">hao123</a></li>
+				<li><a href="">地图</a></li>
+				<li><a href="">视频</a></li>
+				<li><a href="">贴吧</a></li>
+				<li><a href="">登入</a></li>
+				<li class="dropdown"><a href="" >设置</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">搜索设置</a></li>
+						<li><a href="#">高级设置</a></li>
+						<li><a href="#">关闭预测</a></li>
+						<li><a href="#">搜索历史</a></li>
+					</ul>
+				</li>
+				<li class="blue-btn"><a href="" class="blue-btn-a">更多产品</a>
+					<!--侧边栏-->
+					<div class="sidebar">
+						<ul>
+							<li><a href=""><div id="nuomi" class="typecss"></div><p>糯米</p></a></li>
+							<li><a href=""><div id="knowledge" class="typecss"></div><p>知道</p></a></li>
+							<li><a href=""><div id="music" class="typecss"></div><p>音乐</p></a></li>
+							<li><a href=""><div id="pic" class="typecss"></div><p>图片</p></a></li>
+							<li><a href=""><div id="text" class="typecss"></div><p>文库</p></a></li>
+							<li><a href=""><div id="fyb" class="typecss"></div><p>风云榜</p></a></li>
+							<li><a href=""><div id="tuiguang" class="typecss"></div><p>百度推广</p></a></li>
+							<li><a href=""><p style="padding-top:28px;">全部产品</p></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--搜索-->
+		<div class="body">
+			<img src="bd_logo1.png" alt="">
+			<input type="text" class="text">
+			<input type="submit" value="百度一下" class="submit">
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<div class="inner">
+				<p>
+					<a href="">把百度设为主页</a>
+					<a href="">关于百度</a>
+					<a href="">About Baidu</a>
+				</p>
+				<p>©2015 Baidu 使用百度前必读 意见反馈 京ICP证030173号 </p>
+			</div>
+		</div>
+	</div>
+	<script>
+	window.onload=function(){
+			var blueBtn=document.getElementsByClassName("blue-btn")[0];
+			var sidebar=document.getElementsByClassName("sidebar")[0];
+			var sidebarA=document.getElementsByClassName("blue-btn-a")[0];
+			blueBtn.onmouseover=function(){
+				sidebar.style.display="block";
+			}
+			blueBtn.onmouseout=function(){
+				sidebar.style.display="none";
+			}
+		}	
+	</script>
+</body>
+</html>

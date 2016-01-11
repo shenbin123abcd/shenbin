@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百度新闻</title>
+    <link href="css/normal.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <!-- 顶部logo -->
+                <div class="vip">
+                    <!-- VIP操作 -->
+                    <div class="baidubtn"></div>
+                    <div class="baiduuser"></div>
+                </div>
+                <div class="more">
+                    <!-- 右侧按钮 -->
+                    <div class="baidusearch"></div>
+                    <div class="baiduadd"></div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul id="navlist">
+                <!-- 新闻导航栏 -->
+                <li data-newstype="hot">推荐</li>
+                <li data-newstype="web">互联网</li>
+                <li data-newstype="etm">娱乐</li>
+            </ul>
+        </nav>
+        <article>
+            <!-- 新闻显示 -->
+            <div class="newsmain newshow baidunew"></div>
+        </article>
+        <footer>
+            <!-- 底部导航 -->
+            <ul>
+                <li>意见反馈</li>
+                <li>应用推荐</li>
+                <li>客户端</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/new.js"></script>
+</body>
+
+</html>
