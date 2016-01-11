@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>实战盒子模型与弹性盒模型</title>
+<style>
+	.xiezi{
+		width:100px;
+		height:100px;
+		background:orange;
+	}
+	.xiehe{
+		padding:10px;
+		width:100px;
+		height:100px;
+		background:red;
+		border:5px solid black;
+	}
+	.daizi{
+		width:130px;
+		height:130px;
+		background:green;
+		margin-bottom:10px;
+	}
+	.xiezi1{
+		width:100px;
+		height:100px;
+		background:orange;
+	}
+	.xiehe1{
+		padding:10px;
+		width:130px;
+		height:130px;
+		background:red;
+		border:5px solid black;
+		box-sizing:border-box;
+	}
+	.daizi1{
+		width:130px;
+		height:130px;
+		background:green;
+	}
+	.col{
+		margin:100px;
+		-webkit-column-count:4;
+		-webkit-column-rule-style:dotted;
+		-moz-column-count:4;
+		-moz-column-rule-style:dotted;
+	}
+	.middle{
+		width:200px;
+		height:200px;
+		background:pink;
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+	}
+	.first{
+		height:100px;
+		background:red;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+	}
+	.second{
+		height:100px;
+		background:blue;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+	}
+	.third{
+		height:200px;
+		background:orange;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+	}
+	#con{
+		display:-webkit-box;
+		display:-moz-box;
+		width:100%;
+	}
+	
+	.first2{
+		height:100px;
+		background:red;
+		-webkit-flex:2;
+		-moz-flex:2;
+	}
+	.second2{
+		height:100px;
+		background:blue;
+		-webkit-flex:1;
+		-moz-flex:1;
+	}
+	.third2{
+		height:200px;
+		background:orange;
+		-webkit-flex:3;
+		-moz-flex:3;
+	}
+	#con2{
+		display:-webkit-flex;
+		display:-moz-flex;
+		width:100%;
+		-webkit-flex-direction:column;
+		height:600px;
+	}
+</style>
+</head>
+<body>
+	<div class="daizi">
+		<div class="xiehe">
+			<div class="xiezi">
+				鞋子(标准盒模型)
+			</div>
+		</div>
+	</div>	
+	
+	<div class="daizi1">
+		<div class="xiehe1">
+			<div class="xiezi1">
+				鞋子(box-sizing适用于手机端)
+			</div>
+		</div>
+	</div>
+	
+	<!--多列布局-->
+	<div class="col">
+		<img src="http://m.tiebaimg.com/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=897111badc094c1a010a78320ee7a6d0&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2Fe4e49e510fb30f244192995ece95d143ac4b03cb.jpg" width="100" height="100">
+		《盗梦空间》：完美梦境的虚实之道  　　【本文为无剧透绿色版影评，想要讨论情节设定之类无聊却有趣的玩意儿的，请移步隔壁“老干部活动中心”，谢谢。】 【一】 　　《盗梦空间》（Inception）是部“山寨片”——如果仅仅看它的硬件设定的话。 　　可以说，本片中“入梦”的硬件条件，让一切“硬科幻”迷们抓狂；那个让大伙一起做梦的机器（梦机，以下简称“焖鸡”），电影从未解释过其原理，也没有什么复杂的物理结构，要不是出现在本片中，你很可能意味那只是一套普通的医疗仪器；大家“连根线就能进入一个合梦时空”的设定，让你想到小时候玩过家家时用易拉罐作电话的情形。 　　不过，从科学的角度去解释设备可行性，根本就不是影片的重点；硬件设定，对于类似本片的幻想故事而言，只是一个从“0”到“1”的过程；硬科幻迷们可能认为这之间区别很大很严肃，但对讲故事而言，一切都只是个由头而已。就像牛顿同学的“第一推动力”，玄是玄了点，但丝毫不能掩盖在那个前提下他整个力学体系的光辉。同理，诺兰哥哥只不过以这个“可以一起做梦”的机器为契机，来讲一个情感、意识与心理的复杂而美妙的故事。 　　当我们接受硬件设定上“无中生有”的假设之后，《盗梦空间》的创意听起来还是“有点悬”：像这种在硬件层次无视科学基础，转而以感情为核心，底下还搞些心灵救赎之类东东的架构，很有可能制造出三俗的玩意儿，比如《蝴蝶效应》（Butterfly Effect）之流。不是说玩“心灵鸡汤”一定很廉价，而是说如果那样的感情表现得太直白而且用重复的手法不断强调（类似“不断回到过去拯救”之类的桥段），就会显得很腻歪，连带着想要表达的感情都无聊起来；反过来，如果有足够复杂微妙的外壳包裹想要表达的感情、能让观众费尽心思才能体会到那个感情核心的乐趣以及成就感，这样的欣赏心理过程才会更超值，而且也更能展示编导的技能。对我而言，这样一个精妙的过程应该是“有追求的”电影该表现的重点，而诺兰哥哥（Christopher Nolan）的《盗梦空间》恰恰是一部将“1”拓展成“99”的完美案例。 【二】 　　现在，据说连超级赛亚人都知道本片是有关多重梦境的，但这并非将“1”变成“99”的法宝利器；因为你可以将梦境结构设计得比本片更复杂，但那种复杂可能只是个空框架，你不会感觉到质感。实际上，片中“梦中梦”的结构，从了解剧情梗概的角度来说，其实是非常线性简单的，不像《记忆碎片》（Momento）那么机巧，更不像《穆赫兰道》（Mulholland Dr.）那般变幻无形。
+	</div>
+	</hr>
+	<!--水平居中-->
+	<div class="middle">
+		<img src="http://m.tiebaimg.com/timg?wapp&quality=80&size=b150_150&subsize=20480&cut_x=0&cut_w=0&cut_y=0&cut_h=0&sec=1369815402&srctrace&di=897111badc094c1a010a78320ee7a6d0&wh_rate=null&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2Fe4e49e510fb30f244192995ece95d143ac4b03cb.jpg" width="100" height="100">
+	</div>
+	
+	<!--弹性盒模型(box)-->
+	<hr/>
+	<div id="con">
+		<div class="first">1</div>
+		<div class="second">2</div>
+		<div class="third">3</div>
+	</div>
+	
+	<!--弹性盒模型(flex)-->
+	<hr/>
+	<div id="con2">
+		<div class="first2">1</div>
+		<div class="second2">2</div>
+		<div class="third2">3</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

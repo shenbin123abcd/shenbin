@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度首页</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}	
+	.container{
+		overflow:hidden;
+		display:block;
+		position:relative;
+	}
+	.container-top{
+		margin-right:20px;
+	}
+	.container-top li,.container-bottom li{
+		list-style: none;
+		display:inline-block;
+		margin-right:20px;
+	}
+	a{
+		color:#333;
+		font-weight: bold;
+		font-size: 13px;
+	}
+	li.li-blue{
+		background:#38f;
+		padding:4px 6px;
+		margin-right: 0;
+		color:white;
+	}
+	li.li-blue a{
+		text-decoration:none;
+	}
+	.navbar{
+		margin-top:24px;
+		float:right;
+		position:relative;
+	}
+	.container-middle{
+		margin-top:100px;
+		overflow:hidden;
+	}
+	.container-middle img{
+		width:270px;
+		height:129px;
+		margin:0 auto;
+		display: block;
+	}
+	.input-box{
+		margin-top:45px;
+	}
+	input[type=text]{
+		width:540px;
+		height:36px;
+	}
+	input[type=submit]{
+		width:100px;
+		height:40px;
+		background:#3385ff ;
+		border: 1px solid #2d78f4;
+		color:white;
+	}
+	form.input-box{
+		width:652px;
+		margin:0 auto;
+		margin-top:32px;
+	}
+	.container-bottom a{
+		color:#00c;
+	}
+	.container-bottom{
+		position:fixed;
+		bottom:65px;
+		width:100%;
+	}
+	.container-bottom ul{
+		width:411px;
+		display: block;
+		margin:0 auto;
+	}
+	.container-bottom ul li{
+		margin:0 10px;
+	}
+	.container-bottom p{
+		width:357px;
+		margin:0 auto;
+		margin-top:10px;
+		color:#666;
+		font-size:14px;
+	}
+	.side-bar{
+		display:none;
+		position:fixed;
+		right:0;
+		width:85px;
+	}
+	.side-bar ul{
+		margin:0 auto;
+	}
+	.side-bar ul li{
+		list-style: none;
+		padding:15px 10px;
+		width:65px;
+		margin:0 auto;
+		border:#f0f0f0 1px solid;
+	}
+	.side-bar a{
+		display:block;
+		margin:0 auto;
+		width:27px;
+		margin-top:5px;
+		text-decoration: none;
+		color:black;
+	}
+	.side-bar a.nuomi{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat;
+		width:36px;
+		height:36px;
+	}
+	.side-bar a.knowdge{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -36px 0;
+		width:36px;
+		height:36px;
+	}
+	.side-bar a.music{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -72px 0;
+		width:40px;
+		height:36px;
+	}
+	.side-bar a.picture{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -112px 0;
+		width:36px;
+		height:36px;
+	}
+	.side-bar a.text{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -148px 0;
+		width:36px;
+		height:36px;
+	}
+	.side-bar a.menu{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -183px 0;
+		width:36px;
+		height:36px;
+	}
+	.side-bar a.tuiguang{
+		background: url("bdbri_icons_2e35e84b.png") no-repeat -220px 0;
+		width:36px;
+		height:36px;
+	}
+	a.three-style{
+		width:40px;
+	}
+	a.four-style{
+		width:54px;
+	}
+	.dropdown-li{
+		position:relative;
+	}
+	.dropdown{
+		position:absolute;
+		width:75px;
+		border:1px solid grey;
+		box-shadow: 1px 1px 1px #aaaaaa;
+		left:-23px;
+		display:none;
+	}
+	.dropdown a{
+		display:block;
+		padding:10px 10px;
+		text-decoration: none;
+	}
+	.dropdown-li:hover ul{
+		display:block;
+	}
+	.dropdown a:hover{
+		background: #38f;
+		color:white;
+	}
+	.arrow{
+		position:absolute;
+		width:0;
+		height:0;
+		border:9px solid #aaa;
+		border-top-color:transparent;
+		border-left-color:transparent;
+		border-right-color:transparent;
+		z-index:9;
+		right:26px;
+		top:-18px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container-top">
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">新闻</a></li>
+					<li><a href="#">hao123</a></li>
+					<li><a href="#">地图</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">登入</a></li>
+					<li class="dropdown-li"><a href="#">设置</a>
+						<ul class="dropdown">
+							<div class="arrow"></div>
+							<a href="">搜索设置</a>
+							<a href="">高级设置</a>
+							<a href="">关闭预测</a>
+							<a href="">搜索历史</a>
+						</ul>
+					</li>
+					<li class="li-blue"><a href="#">更多产品
+						<!--侧边栏-->
+						<div class="side-bar">
+							<ul>
+								<li><a href="#" class="nuomi"></a><a href="#">糯米</a></li>
+								<li><a href="#" class="knowdge"></a><a href="#">知道</a></li>
+								<li><a href="#" class="music"></a><a href="#">音乐</a></li>
+								<li><a href="#" class="picture"></a><a href="#">图片</a></li>
+								<li><a href="#" class="text"></a><a href="#">文库</a></li>
+								<li><a href="#" class="menu"></a><a href="#" class="three-style">风云榜</a></li>
+								<li><a href="#" class="tuiguang"></a><a href="#" class="four-style">百度推广</a></li>
+								<li><a href="#">全部产品</a></li>
+							</ul>
+						</div></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container-middle">
+			<img src="bd_logo1.png"/>
+			<form class="input-box">
+				<input type="text">
+				<input type="submit" value="百度一下">
+			</form>
+		</div>
+		<div class="container-bottom">
+			<ul>
+				<li><a href="#">Win10免费升级</a></li>
+				<li><a href="#">把百度设为主页</a></li>
+				<li><a href="#">关于百度</a></li>
+				<li><a href="#">About  Baidu</a></li>
+			</ul>
+			<p>©2015 Baidu <a href="#" style="color: #666;">使用百度前必读 意见反馈</a> 京ICP证030173号</p>
+		</div>
+	</div>
+
+	<script>
+		window.onload=function(){
+			var sidebar=document.getElementsByClassName("side-bar")[0];
+			var moreBtn=document.getElementsByClassName("li-blue")[0];
+			moreBtn.onmouseover=function(){
+				sidebar.style.display="block";
+				moreBtn.style.background="none";
+			}
+			moreBtn.onmouseout=function(){
+				sidebar.style.display="none";
+				moreBtn.style.background="#38f";
+			}
+	}
+	</script>
+</body>
+</html>

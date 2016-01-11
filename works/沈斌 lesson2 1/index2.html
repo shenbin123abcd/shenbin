@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="十字架">
+<meta name="description" content="水平垂直居中">
+<title>十字架水平垂直居中(2)</title>
+<style type="text/css">
+	*{
+		padding:0;
+		margin:0;
+	}
+	.outer{
+		width:100%;
+		height:500px;
+		display:table;
+		text-align:center;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.inner{
+		display:table-cell;
+		vertical-align:middle;
+		height:400px;
+	}
+	
+	.box-style{
+		display:inline-block;
+		border-radius:5px;
+		box-shadow:2px 2px 5px #333333;
+	}
+	.box1{
+		width:100px;
+		height:100px;
+		background:green;
+		border:1px solid green;
+		position:relative;
+		top:-110px;
+		left:220px;
+	}
+	.box2{
+		width:100px;
+		height:100px;
+		background:pink;
+		border:1px solid pink;
+	}
+	.box3{
+		width:100px;
+		height:100px;
+		border:1px solid red;
+	}
+	.box4{
+		width:100px;
+		height:100px;
+		background:yellow;
+		border:1px solid yellow;
+	}
+	.box5{
+		width:100px;
+		height:100px;
+		background:orange;
+		border:1px solid orange;
+		position:relative;
+		left:-220px;
+		top:110px;
+	}
+	
+
+</style>
+</head>
+<body>
+<div class="outer">
+	<div class="inner">
+		<div class="box1 box-style"></div>
+		<div class="box2 box-style"></div>
+		<div class="box3 box-style">
+			<img src="panda_128px_1082116_easyicon.net.png" width="100" >
+		</div>
+		<div class="box4 box-style"></div>
+		<div class="box5 box-style"></div>
+	</div>
+<div>
+
+
+
+</body>
+</html>
